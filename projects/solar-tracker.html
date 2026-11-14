@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar Tracker — Mustafa Adawi Portfolio</title>
+  <meta name="description" content="Case study: dual-axis solar tracker using four LDR sensors, an Arduino and two servo motors, with a SOLIDWORKS frame checked by FEA at 0°, 45° and 86°.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Dual-Axis Solar Panel Tracking System | Mustafa Adawi">
+  <meta property="og:description" content="Mechatronic solar tracker: 4 LDRs, Arduino control, 2 servo motors, SOLIDWORKS frame and FEA in AISI 1045 steel.">
+  <meta property="og:image" content="../assets/img/solar-tracker.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="../index.html"><img class="brand__avatar" src="../assets/img/avatar.jpg" alt="" width="40" height="40">Mustafa Adawi</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" data-nav="home" href="../index.html">Home</a></li>
+        <li><a class="nav__link" data-nav="projects" href="../projects.html">Projects</a></li>
+        <li><a class="nav__link" data-nav="certificates" href="../certificates.html">Certificates</a></li>
+        <li><a class="nav__link" data-nav="about" href="../about.html">About</a></li>
+        <li class="nav__cta"><a class="nav__cv" href="../assets/docs/Mustafa-Adawi-Resume.pdf" target="_blank" rel="noopener" data-cv-preview="../assets/img/resume-preview.jpg" aria-label="View resume"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><span>Resume</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 1–2. Breadcrumb, title, tags, info bar -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li aria-current="page">Dual-Axis Solar Tracker</li>
+          </ol>
+        </nav>
+        <span class="eyebrow">Project 03</span>
+        <h1>Dual-Axis Solar Panel Tracking System</h1>
+        <p class="case-subtitle">A sensor-driven tracker that keeps a solar panel facing the sun all day</p>
+        <ul class="tags tags--dark">
+          <li class="tag">Mechatronics</li>
+          <li class="tag">Arduino</li>
+          <li class="tag">SOLIDWORKS</li>
+          <li class="tag">FEA</li>
+          <li class="tag">Manufacturing</li>
+        </ul>
+        <div class="info-bar">
+          <div class="info-bar__item"><span class="info-bar__label">Role</span><span class="info-bar__value">Electrical &amp; Integration Lead</span></div>
+          <div class="info-bar__item"><span class="info-bar__label">Duration</span><span class="info-bar__value">[ADD VALUE]</span></div>
+          <div class="info-bar__item"><span class="info-bar__label">Team</span><span class="info-bar__value">[ADD VALUE] members</span></div>
+          <div class="info-bar__item"><span class="info-bar__label">Tools</span><span class="info-bar__value">SOLIDWORKS, FEA, Arduino</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Hero image -->
+    <div class="case-hero-img">
+      <div class="container">
+        <div class="case-slider" role="region" aria-roledescription="slideshow" aria-label="Project images">
+          <figure class="case-slide is-active" aria-hidden="false">
+            <img class="case-slide__bg" src="../assets/img/solar-tracker.png" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/solar-tracker.png" alt="Dual-axis solar tracker prototype: solar panel on a pan-tilt mount with an LDR sensor head, servo motors, Arduino and battery pack" decoding="async">
+            <figcaption class="case-slide__caption">Dual-axis tracker prototype</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/st-assembly-drawing.png" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/st-assembly-drawing.png" alt="SOLIDWORKS assembly drawing of the solar tracker with front, side and isometric views, balloons and a 4-item bill of materials" decoding="async">
+            <figcaption class="case-slide__caption">Assembly drawing with bill of materials</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/st-fea-view1.webp" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/st-fea-view1.webp" alt="FEA von Mises stress plot of the tilted tracker frame, peak 71.2 MPa against a 530 MPa yield strength" decoding="async">
+            <figcaption class="case-slide__caption">FEA — von Mises stress, tilted panel (peak 71.2 MPa)</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/st-fea-view2.png" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/st-fea-view2.png" alt="FEA von Mises stress plot of the tracker at a second panel angle, peak 71.1 MPa" decoding="async">
+            <figcaption class="case-slide__caption">FEA — von Mises stress, second angle (peak 71.1 MPa)</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/st-wiring-diagram.webp" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/st-wiring-diagram.webp" alt="Wiring diagram: solar panel, charge controller, battery, 300 W inverter and socket, Arduino Uno, two servo motors and four LDR sensors" decoding="async">
+            <figcaption class="case-slide__caption">Electrical connection plan</figcaption>
+          </figure>
+          <button class="case-slider__nav case-slider__prev" type="button" aria-label="Previous image">&#8249;</button>
+          <button class="case-slider__nav case-slider__next" type="button" aria-label="Next image">&#8250;</button>
+          <div class="case-slider__dots" role="group" aria-label="Choose image"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Key metrics -->
+    <section class="section section--alt" aria-label="Key metrics" style="padding-top:48px;">
+      <div class="container">
+        <div class="metrics">
+          <div class="metric reveal"><div class="metric__value" data-count="2" data-suffix=" axes">2 axes</div><div class="metric__label">Horizontal rotation + vertical tilt</div></div>
+          <div class="metric reveal"><div class="metric__value" data-count="4" data-suffix=" LDRs">4 LDRs</div><div class="metric__label">Light sensors detecting sun direction</div></div>
+          <div class="metric reveal"><div class="metric__value" data-count="2" data-suffix=" servos">2 servos</div><div class="metric__label">Arduino-controlled actuators</div></div>
+          <div class="metric reveal"><div class="metric__value" data-count="71.2" data-decimals="1" data-suffix=" MPa">71.2 MPa</div><div class="metric__label">Peak von Mises stress — yield 530 MPa</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5–6. Challenge + role -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="prose reveal">
+          <span class="eyebrow">The challenge</span>
+          <h2>Follow the sun, automatically</h2>
+          <p>A fixed solar panel only faces the sun directly for a short part of the day, so it loses energy in the morning and afternoon. The goal was a low-cost tracker that senses where the light is coming from and turns the panel on two axes to follow it.</p>
+          <p>The system had to combine mechanical, electrical and control parts. These were a frame strong enough at every tilt angle, a safe power supply, and Arduino logic that reads four sensors and drives two motors.</p>
+        </div>
+        <div class="prose reveal">
+          <span class="eyebrow">My role</span>
+          <h2>What I did</h2>
+          <ul>
+            <li><strong>Developed</strong> the electrical connection plan for the whole tracker.</li>
+            <li><strong>Planned</strong> power distribution between the solar panel, charge controller, battery, 300 W inverter and DC-DC converter.</li>
+            <li><strong>Defined</strong> the Arduino connections for the four LDR sensors and two servo motors.</li>
+            <li><strong>Supported</strong> integration of the electrical and control components into the frame.</li>
+            <li><strong>Built and tested</strong> the prototype together with the team.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Design process -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Design process</span>
+          <h2>Sense, decide, move</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>Design the frame in SOLIDWORKS</h3>
+              <p>The team modelled the base, panel holders, panel support and sensor head in 3D and produced an assembly drawing with a bill of materials. AISI 1045 steel was selected for the structural parts for its strength and suitability.</p>
+            </div>
+            <figure class="step__media"><img class="fit-contain" src="../assets/img/st-assembly-drawing.png" alt="SOLIDWORKS assembly drawing of the solar tracker with three views and a bill of materials" loading="lazy" width="1600" height="1142"></figure>
+          </li>
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>Check the structure with FEA</h3>
+              <p>Ran static studies at different operating angles (0°, 45° and 86°) to make sure the frame stays safe across the full tilt range. The peak von Mises stress was about 71 MPa, far below the 530 MPa yield strength, a safety factor of roughly 7.4.</p>
+            </div>
+            <figure class="step__media"><img class="fit-contain" src="../assets/img/st-fea-view1.webp" alt="FEA von Mises stress plot of the tracker frame with loads and fixtures" loading="lazy" width="1900" height="1143"></figure>
+          </li>
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>Plan the electrical system</h3>
+              <p>I created the connection plan. Power flows from the solar panel through a charge controller to the battery, a 300 W inverter feeds an output socket, and a DC-DC converter supplies the Arduino and servos. The four LDRs and two servo motors are mapped to specific Arduino Uno pins, with a common ground.</p>
+            </div>
+            <figure class="step__media"><img class="fit-contain" src="../assets/img/st-wiring-diagram.webp" alt="Wiring diagram of the solar tracker's power, sensor and servo connections" loading="lazy" width="2000" height="1297"></figure>
+          </li>
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>Integrate, build and test</h3>
+              <p>The Arduino compares the light on opposite LDR pairs and moves the servos until the readings balance, so the panel points at the brightest direction. Expected solar efficiency and energy production were estimated for environmental conditions in Bahrain.</p>
+            </div>
+            <figure class="step__media"><img class="fit-contain" src="../assets/img/solar-tracker.png" alt="Assembled dual-axis solar tracker prototype" loading="lazy" width="500" height="620"></figure>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 8. Results & lessons -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="callout reveal">
+          <h3>Results</h3>
+          <ul>
+            <li>Detailed electrical connection plan covering power supply, sensor inputs, motor control and interconnections.</li>
+            <li>Frame validated with FEA at 0°, 45° and 86° tilt: peak stress about 71 MPa against a 530 MPa yield strength.</li>
+            <li>Working dual-axis prototype that follows a light source on both axes.</li>
+            <li>Estimated energy gain over a fixed panel: [ADD VALUE]%.</li>
+          </ul>
+        </div>
+        <div class="callout reveal">
+          <h3>Lessons learned</h3>
+          <ul>
+            <li>A clear connection plan before wiring saves time and prevents damage to components.</li>
+            <li>Mechatronic projects only work when the mechanical, electrical and software parts are designed together.</li>
+            <li>Checking a moving structure at several positions, not just one, gives real confidence in the design.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Prev / next -->
+    <section class="section section--tight">
+      <div class="container project-nav">
+        <a href="golf-cart.html"><span>← Previous project</span><strong>Golf Cart Chassis &amp; Suspension</strong></a>
+        <a class="project-nav__next" href="roll-bender.html"><span>Next project →</span><strong>Manual Double Roll Bending Machine</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Mustafa Adawi</p>
+          <p class="footer__tagline">Mechanical Engineer — Mechanical Design | Structural Analysis | Simulation</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul class="footer__links">
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../certificates.html">Certificates</a></li>
+            <li><a href="../about.html">About, Experience &amp; Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:engmustafaadawi@gmail.com">engmustafaadawi@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/mustafa-adawi-46a469348" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="../assets/docs/Mustafa-Adawi-Resume.pdf" download>Download Resume (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy"><img src="../assets/img/logo-ma.svg" alt="" width="28" height="28"><span>&copy; <span class="js-year">2026</span> Mustafa Adawi</span></span>
+        <span>Hidd, Bahrain</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-gear" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <circle class="scroll-gear__track" cx="32" cy="32" r="29"/>
+      <circle class="scroll-gear__ring" cx="32" cy="32" r="29"/>
+      <g class="scroll-gear__big" transform="translate(27 35)"><path/><circle r="3.2"/></g>
+      <g class="scroll-gear__small" transform="translate(41.6 22.4)"><path/><circle r="2.2"/></g>
+    </svg>
+  </button>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

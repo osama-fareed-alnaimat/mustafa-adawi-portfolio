@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Mustafa Adawi Portfolio</title>
+  <meta name="description" content="Mechanical design, FEA, mechatronics, manufacturing and thermal engineering projects by Mustafa Adawi, Mechanical Engineer.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Engineering Projects | Mustafa Adawi">
+  <meta property="og:description" content="Seven engineering projects: gearbox design, golf cart chassis, solar tracker, heat exchanger, refrigeration analysis, roll bending machine and an award-winning autonomous golf cart.">
+  <meta property="og:image" content="assets/img/gearbox-render.png">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html"><img class="brand__avatar" src="assets/img/avatar.jpg" alt="" width="40" height="40">Mustafa Adawi</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" data-nav="home" href="index.html">Home</a></li>
+        <li><a class="nav__link" data-nav="projects" href="projects.html">Projects</a></li>
+        <li><a class="nav__link" data-nav="certificates" href="certificates.html">Certificates</a></li>
+        <li><a class="nav__link" data-nav="about" href="about.html">About</a></li>
+        <li class="nav__cta"><a class="nav__cv" href="assets/docs/Mustafa-Adawi-Resume.pdf" target="_blank" rel="noopener" data-cv-preview="assets/img/resume-preview.jpg" aria-label="View resume"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><span>Resume</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Portfolio</span>
+        <h1>Engineering Projects</h1>
+        <p>Academic and team projects in mechanical design, structural analysis, mechatronics, manufacturing and thermal engineering. Each one shows the problem, the method I used and the result.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <a class="card__media" href="projects/gearbox.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/img/gearbox-render.png" alt="" loading="lazy" width="923" height="707">
+              <span class="card__num">01</span>
+            </a>
+            <div class="card__body">
+              <h3><a href="projects/gearbox.html">Three-Stage Spur Gearbox Design</a></h3>
+              <ul class="tags"><li class="tag">Mechanical Design</li><li class="tag">Power Transmission</li><li class="tag">SOLIDWORKS</li></ul>
+              <p class="card__result">12:1 reduction from 1,920 RPM to 160 RPM at 41.24 kW for an airport baggage conveyor.</p>
+              <a class="card__link" href="projects/gearbox.html">Read case study</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <a class="card__media" href="projects/golf-cart.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/img/gc-prototype-front.jpg" alt="" loading="lazy" width="1050" height="1400">
+              <span class="card__num">02</span>
+            </a>
+            <div class="card__body">
+              <h3><a href="projects/golf-cart.html">Golf Cart Chassis &amp; Suspension Design</a></h3>
+              <ul class="tags"><li class="tag">Mechanical Design</li><li class="tag">FEA</li><li class="tag">Manufacturing</li></ul>
+              <p class="card__result">Chassis designed in SOLIDWORKS, checked with FEA (A-arm safety factor 3.2) and built into a working prototype.</p>
+              <a class="card__link" href="projects/golf-cart.html">Read case study</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <a class="card__media" href="projects/solar-tracker.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/img/solar-tracker.png" alt="" loading="lazy" width="500" height="620">
+              <span class="card__num">03</span>
+            </a>
+            <div class="card__body">
+              <h3><a href="projects/solar-tracker.html">Dual-Axis Solar Panel Tracking System</a></h3>
+              <ul class="tags"><li class="tag">Mechatronics</li><li class="tag">Arduino</li><li class="tag">FEA</li></ul>
+              <p class="card__result">4 LDR sensors and 2 servo motors keep the panel facing the sun; the frame peaks at about 71 MPa against a 530 MPa yield.</p>
+              <a class="card__link" href="projects/solar-tracker.html">Read case study</a>
+            </div>
+          </article>
+          <article class="card reveal" id="autonomous-golf-cart">
+            <div class="card__media">
+              <img src="assets/img/award-team.jpg" alt="Autonomous golf cart team receiving the Best Community Projects award on stage" loading="lazy" width="1280" height="936">
+              <span class="card__num">04</span>
+              <span class="card__award">Award winner</span>
+            </div>
+            <div class="card__body">
+              <h3>Design and Development of an Autonomous Golf Cart</h3>
+              <ul class="tags"><li class="tag">Computer Vision</li><li class="tag">Python</li><li class="tag">YOLOv8</li><li class="tag">MPC</li></ul>
+              <p class="card__result">Capstone project. I built the lane detection, object detection and trajectory generation (HybridNets, YOLOv8n, Python), tested them in CARLA, and helped with the wiring and assembly.</p>
+              <p class="card__note">Best Community Project Award · Engineering Expo 2026</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <button class="card__media card__media--deck" type="button" data-deck="assets/img/hx/hx-slide-" data-deck-count="20" data-deck-title="Shell &amp; Tube Heat Exchanger Design" aria-label="Preview the heat exchanger presentation, 20 slides">
+              <img src="assets/img/hx/hx-slide-06.jpg" alt="" loading="lazy" width="1280" height="720">
+              <span class="card__num">05</span>
+              <span class="card__deck-badge" aria-hidden="true">20 slides</span>
+            </button>
+            <div class="card__body">
+              <h3>Shell &amp; Tube Heat Exchanger Design</h3>
+              <ul class="tags"><li class="tag">Heat Transfer</li><li class="tag">Fluid Mechanics</li><li class="tag">Pump Selection</li></ul>
+              <p class="card__result">Cools 91,000 kg/h of methanol from 85 °C to 50 °C with seawater: a 2.23 MW design with 115 titanium tubes, a duplex stainless-steel shell and pressure drops under 0.7 bar.</p>
+              <button class="card__link card__link--btn" type="button" data-deck="assets/img/hx/hx-slide-" data-deck-count="20" data-deck-title="Shell &amp; Tube Heat Exchanger Design">Preview presentation</button>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card__media">
+              <img src="assets/img/refrigeration-schematic.png" alt="Schematic of the vapour-compression refrigeration test rig" loading="lazy" width="540" height="380">
+              <span class="card__num">06</span>
+            </div>
+            <div class="card__body">
+              <h3>Refrigeration System Performance Analysis</h3>
+              <ul class="tags"><li class="tag">Thermodynamics</li><li class="tag">Refrigeration Cycle</li><li class="tag">Energy Efficiency</li></ul>
+              <p class="card__result">Analysed 5 lab trials of a vapour-compression rig: average COP about 3.97, with a 5.2% average difference between the P-h diagram and direct calculation.</p>
+              <p class="card__note">Individual academic project.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <a class="card__media" href="projects/roll-bender.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/img/roll-bender-render.png" alt="" loading="lazy" width="819" height="709">
+              <span class="card__num">07</span>
+            </a>
+            <div class="card__body">
+              <h3><a href="projects/roll-bender.html">Manual Double Roll Bending Machine</a></h3>
+              <ul class="tags"><li class="tag">SOLIDWORKS</li><li class="tag">3D Part Modelling</li><li class="tag">Engineering Drawings</li></ul>
+              <p class="card__result">Modelled all 22 parts and produced an assembly drawing with a BOM and detailed third-angle part drawings.</p>
+              <a class="card__link" href="projects/roll-bender.html">Read case study</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div>
+          <h2>Want to know more about a project?</h2>
+          <p>I am happy to walk you through the calculations, models and drawings behind any of these projects.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a class="btn btn--primary" href="about.html#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Mustafa Adawi</p>
+          <p class="footer__tagline">Mechanical Engineer — Mechanical Design | Structural Analysis | Simulation</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul class="footer__links">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="about.html">About, Experience &amp; Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:engmustafaadawi@gmail.com">engmustafaadawi@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/mustafa-adawi-46a469348" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="assets/docs/Mustafa-Adawi-Resume.pdf" download>Download Resume (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy"><img src="assets/img/logo-ma.svg" alt="" width="28" height="28"><span>&copy; <span class="js-year">2026</span> Mustafa Adawi</span></span>
+        <span>Hidd, Bahrain</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-gear" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <circle class="scroll-gear__track" cx="32" cy="32" r="29"/>
+      <circle class="scroll-gear__ring" cx="32" cy="32" r="29"/>
+      <g class="scroll-gear__big" transform="translate(27 35)"><path/><circle r="3.2"/></g>
+      <g class="scroll-gear__small" transform="translate(41.6 22.4)"><path/><circle r="2.2"/></g>
+    </svg>
+  </button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
