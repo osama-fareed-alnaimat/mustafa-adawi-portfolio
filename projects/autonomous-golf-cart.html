@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autonomous Golf Cart — Mustafa Adawi Portfolio</title>
+  <meta name="description" content="Capstone case study: machine-learning lane and object detection (HybridNets, YOLOv8n) for an autonomous campus golf cart, validated in CARLA. Best Community Project Award 2026.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Autonomous Golf Cart | Mustafa Adawi">
+  <meta property="og:description" content="Machine-learning perception for a low-cost autonomous golf cart retrofit — Best Community Project Award, Engineering Expo 2026.">
+  <meta property="og:image" content="../assets/img/award-team.jpg">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="../index.html"><img class="brand__avatar" src="../assets/img/avatar.jpg" alt="" width="40" height="40">Mustafa Adawi</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" data-nav="home" href="../index.html">Home</a></li>
+        <li><a class="nav__link" data-nav="projects" href="../projects.html">Projects</a></li>
+        <li><a class="nav__link" data-nav="certificates" href="../certificates.html">Certificates</a></li>
+        <li><a class="nav__link" data-nav="about" href="../about.html">About</a></li>
+        <li class="nav__cta"><a class="nav__cv" href="../assets/docs/Mustafa-Adawi-Resume.pdf" target="_blank" rel="noopener" data-cv-preview="../assets/img/resume-preview.jpg" aria-label="View resume"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><span>Resume</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 1–2. Breadcrumb, title, tags, info bar -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li aria-current="page">Autonomous Golf Cart</li>
+          </ol>
+        </nav>
+        <span class="eyebrow">Project 04 · Capstone</span>
+        <h1>Design and Development of an Autonomous Golf Cart</h1>
+        <p class="case-subtitle">A low-cost, removable self-driving retrofit for a campus electric golf cart — Best Community Project Award, Engineering Expo 2026</p>
+        <ul class="tags tags--dark">
+          <li class="tag">Machine Learning</li>
+          <li class="tag">Python</li>
+          <li class="tag">HybridNets</li>
+          <li class="tag">YOLOv8n</li>
+          <li class="tag">CARLA Simulation</li>
+        </ul>
+        <div class="info-bar">
+          <div class="info-bar__item"><span class="info-bar__label">Role</span><span class="info-bar__value">Perception team (Team A)</span></div>
+          <div class="info-bar__item"><span class="info-bar__label">Year</span><span class="info-bar__value">2025 – 2026</span></div>
+          <div class="info-bar__item"><span class="info-bar__label">Team</span><span class="info-bar__value">5 sub-teams, 1 vehicle</span></div>
+          <div class="info-bar__item"><span class="info-bar__label">Tools</span><span class="info-bar__value">Python, HybridNets, YOLOv8n, Intel RealSense D435, CARLA</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Image slideshow -->
+    <div class="case-hero-img">
+      <div class="container">
+        <div class="case-slider" role="region" aria-roledescription="slideshow" aria-label="Project images">
+          <figure class="case-slide is-active" aria-hidden="false">
+            <img class="case-slide__bg" src="../assets/img/award-team.jpg" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/award-team.jpg" alt="Autonomous golf cart team receiving the Best Community Project Award on stage" decoding="async">
+            <figcaption class="case-slide__caption">Best Community Project Award — Engineering Expo 2026</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/agc/agc-architecture.jpg" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/agc/agc-architecture.jpg" alt="Block diagram of the five subsystems: perception, MPC control, steering, braking and throttle feeding the golf cart" decoding="async">
+            <figcaption class="case-slide__caption">Integrated system architecture — five subsystems</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/agc/agc-day-night.jpg" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/agc/agc-day-night.jpg" alt="Lane detection output on a daytime road and a night-time road" decoding="async">
+            <figcaption class="case-slide__caption">HybridNets lane detection — daytime and night</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/agc/agc-rain-curve.jpg" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/agc/agc-rain-curve.jpg" alt="Lane detection output in rain and on a curved road with centreline trajectory" decoding="async">
+            <figcaption class="case-slide__caption">Lane detection in rain and on a curved road</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/agc/agc-yolov8.jpg" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/agc/agc-yolov8.jpg" alt="YOLOv8n bounding boxes with class labels, confidence and depth-estimated distances" decoding="async">
+            <figcaption class="case-slide__caption">YOLOv8n object detection with depth distances</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/agc/agc-carla.jpg" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/agc/agc-carla.jpg" alt="Perception and MPC running together in CARLA, with detected car distance and lane offset" decoding="async">
+            <figcaption class="case-slide__caption">Closed-loop testing in CARLA simulation</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/agc/agc-lane-fallback.jpg" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/agc/agc-lane-fallback.jpg" alt="Lane boundary detection and the three-level fallback chain" decoding="async">
+            <figcaption class="case-slide__caption">Lane boundaries and the 3-level fallback chain</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/agc/agc-hybridnets.jpg" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/agc/agc-hybridnets.jpg" alt="HybridNets network architecture and drivable-area versus lane-line segmentation" decoding="async">
+            <figcaption class="case-slide__caption">HybridNets architecture and segmentation classes</figcaption>
+          </figure>
+          <button class="case-slider__nav case-slider__prev" type="button" aria-label="Previous image">&#8249;</button>
+          <button class="case-slider__nav case-slider__next" type="button" aria-label="Next image">&#8250;</button>
+          <div class="case-slider__dots" role="group" aria-label="Choose image"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Key metrics -->
+    <section class="section section--alt" aria-label="Key metrics" style="padding-top:48px;">
+      <div class="container">
+        <div class="metrics">
+          <div class="metric reveal"><div class="metric__value" data-count="5">5</div><div class="metric__label">Road conditions validated</div></div>
+          <div class="metric reveal"><div class="metric__value" data-count="0">0</div><div class="metric__label">Unsafe outputs sent to the controller</div></div>
+          <div class="metric reveal"><div class="metric__value" data-count="8.21" data-decimals="2" data-suffix=" cm">8.21 cm</div><div class="metric__label">Mean path-tracking error (system)</div></div>
+          <div class="metric reveal"><div class="metric__value">BHD 1,800</div><div class="metric__label">Retrofit cost per vehicle</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5–6. Challenge + role -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="prose reveal">
+          <span class="eyebrow">The challenge</span>
+          <h2>Make a campus golf cart drive itself — affordably</h2>
+          <p>Campus transport relies on human drivers, while commercial autonomous shuttles cost USD 150,000–350,000. The project retrofitted an existing Club Car Precedent i2 Excel with five removable subsystems — perception, model predictive control (MPC), steering, braking and throttle — for about BHD 1,800 per vehicle, with no permanent modifications.</p>
+          <p>For the perception team, the challenge was campus roads: shadows, curves, crosswalks, night and rain. The system had to keep producing a stable trajectory for the controller even when individual camera frames failed, and spot obstacles in the cart's lane.</p>
+        </div>
+        <div class="prose reveal">
+          <span class="eyebrow">My role</span>
+          <h2>What I did (Team A — Perception)</h2>
+          <ul>
+            <li><strong>Built</strong> a classical lane-detection baseline first (HSV, Canny, Hough), then showed where it fails: night, rain, curves and worn markings.</li>
+            <li><strong>Implemented</strong> machine-learning lane detection with HybridNets (EfficientNet-B3 backbone), using its drivable-area output for stability.</li>
+            <li><strong>Designed</strong> a 3-level fallback chain (sliding window, DBSCAN clustering, edge pixels) so a lane estimate is always available.</li>
+            <li><strong>Generated</strong> the trajectory sent to the controller: lateral offset, curvature and a steering estimate from a polynomial centreline fit.</li>
+            <li><strong>Integrated</strong> YOLOv8n object detection with Intel RealSense depth to flag in-lane hazards and stop signs.</li>
+            <li><strong>Validated</strong> the pipeline in CARLA simulation together with the MPC team.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Design process -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Method</span>
+          <h2>From camera frame to steering command</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>Fit into the whole system</h3>
+              <p>Perception passes only three filtered values to the MPC controller every 0.1 s cycle: lateral offset, curvature and an obstacle flag. Curvature lets the controller steer into a curve before any error builds up.</p>
+            </div>
+            <figure class="step__media"><img class="fit-contain" src="../assets/img/agc/agc-architecture.jpg" alt="System architecture of the autonomous golf cart" loading="lazy" width="1440" height="810"></figure>
+          </li>
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>Detect the lane with machine learning</h3>
+              <p>HybridNets segments each frame into drivable area and lane lines. A sliding-window search finds the boundaries, with DBSCAN clustering and edge pixels as fallbacks, so the pipeline never returns nothing.</p>
+            </div>
+            <figure class="step__media"><img class="fit-contain" src="../assets/img/agc/agc-day-night.jpg" alt="HybridNets lane detection in daytime and at night" loading="lazy" width="1440" height="810"></figure>
+          </li>
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>Stabilise the output</h3>
+              <p>A three-stage filter checks lane width (2.5–5.5 m), rejects impossible values, and smooths the rest with an exponential moving average tuned to the cart's speed. If a frame fails, the last valid values are held.</p>
+            </div>
+            <figure class="step__media"><img class="fit-contain" src="../assets/img/agc/agc-rain-curve.jpg" alt="Stable lane tracking in rain and on a curved road" loading="lazy" width="1440" height="810"></figure>
+          </li>
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>Detect obstacles and test in simulation</h3>
+              <p>YOLOv8n detects vehicles, pedestrians and stop signs; the depth camera gives their distance. An object is a hazard only if it is inside the drivable lane and close enough. The full loop was tested in CARLA before touching the real cart.</p>
+            </div>
+            <figure class="step__media"><img class="fit-contain" src="../assets/img/agc/agc-carla.jpg" alt="Object detection and lane following in CARLA simulation" loading="lazy" width="1440" height="810"></figure>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 8. Results & lessons -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="callout reveal">
+          <h3>Results</h3>
+          <ul>
+            <li>Stable lane detection in 5 conditions: daytime, night, rain, multi-lane intersection and curved road.</li>
+            <li>Zero pipeline failures producing unsafe input to the controller across 322 evaluated frames.</li>
+            <li>Whole system: zero lane departures in CARLA at 0.5, 1.0 and 1.5 m/s, and 8.21 cm mean tracking error on a 117.5 m curved path.</li>
+            <li>6 of 7 project objectives achieved, and the <strong>Best Community Project Award</strong> at the Bahrain Polytechnic Engineering Expo 2026.</li>
+          </ul>
+        </div>
+        <div class="callout reveal">
+          <h3>Lessons learned</h3>
+          <ul>
+            <li>The handling around a model — filtering, fallbacks, freeze-on-failure — matters as much as the model itself.</li>
+            <li>Simulation first: a bad setting seen in CARLA takes minutes to fix; on the real vehicle it could damage it.</li>
+            <li>Next steps: fine-tune HybridNets on local campus images and run it on a Jetson for 20–30 FPS.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Prev / next -->
+    <section class="section section--tight">
+      <div class="container project-nav">
+        <a href="solar-tracker.html"><span>← Previous project</span><strong>Dual-Axis Solar Panel Tracker</strong></a>
+        <a class="project-nav__next" href="refrigeration.html"><span>Next project →</span><strong>Refrigeration System Analysis</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Mustafa Adawi</p>
+          <p class="footer__tagline">Mechanical Engineer — Mechanical Design | Structural Analysis | Simulation</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul class="footer__links">
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../certificates.html">Certificates</a></li>
+            <li><a href="../about.html">About, Experience &amp; Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:engmustafaadawi@gmail.com">engmustafaadawi@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/mustafa-adawi-46a469348" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="../assets/docs/Mustafa-Adawi-Resume.pdf" download>Download Resume (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy"><img src="../assets/img/logo-ma.svg" alt="" width="28" height="28"><span>&copy; <span class="js-year">2026</span> Mustafa Adawi</span></span>
+        <span>Hidd, Bahrain</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-gear" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <circle class="scroll-gear__track" cx="32" cy="32" r="29"/>
+      <circle class="scroll-gear__ring" cx="32" cy="32" r="29"/>
+      <g class="scroll-gear__big" transform="translate(27 35)"><path/><circle r="3.2"/></g>
+      <g class="scroll-gear__small" transform="translate(41.6 22.4)"><path/><circle r="2.2"/></g>
+    </svg>
+  </button>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

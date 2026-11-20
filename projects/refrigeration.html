@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Refrigeration System Analysis — Mustafa Adawi Portfolio</title>
+  <meta name="description" content="Case study: performance analysis of a vapour-compression refrigeration unit — experimental and R-12 P-h chart methods, average COP 3.97, 5.24% average deviation.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Refrigeration System Performance Analysis | Mustafa Adawi">
+  <meta property="og:description" content="Experimental and graphical (P-h chart) analysis of a refrigeration unit: average COP 3.97 with 5.24% deviation between methods.">
+  <meta property="og:image" content="../assets/img/refrigeration-schematic.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="../index.html"><img class="brand__avatar" src="../assets/img/avatar.jpg" alt="" width="40" height="40">Mustafa Adawi</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link" data-nav="home" href="../index.html">Home</a></li>
+        <li><a class="nav__link" data-nav="projects" href="../projects.html">Projects</a></li>
+        <li><a class="nav__link" data-nav="certificates" href="../certificates.html">Certificates</a></li>
+        <li><a class="nav__link" data-nav="about" href="../about.html">About</a></li>
+        <li class="nav__cta"><a class="nav__cv" href="../assets/docs/Mustafa-Adawi-Resume.pdf" target="_blank" rel="noopener" data-cv-preview="../assets/img/resume-preview.jpg" aria-label="View resume"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><span>Resume</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 1–2. Breadcrumb, title, tags, info bar -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li aria-current="page">Refrigeration System Analysis</li>
+          </ol>
+        </nav>
+        <span class="eyebrow">Project 06</span>
+        <h1>Refrigeration System Performance Analysis</h1>
+        <p class="case-subtitle">Measuring the performance of a vapour-compression refrigeration unit two ways — and checking they agree</p>
+        <ul class="tags tags--dark">
+          <li class="tag">Thermodynamics</li>
+          <li class="tag">Refrigeration Cycle</li>
+          <li class="tag">R-12 P-h Chart</li>
+          <li class="tag">Energy Efficiency</li>
+        </ul>
+        <div class="info-bar">
+          <div class="info-bar__item"><span class="info-bar__label">Role</span><span class="info-bar__value">Analysis &amp; report</span></div>
+          <div class="info-bar__item"><span class="info-bar__label">Team</span><span class="info-bar__value">Individual assessment</span></div>
+          <div class="info-bar__item"><span class="info-bar__label">Method</span><span class="info-bar__value">Experimental + graphical (P-h)</span></div>
+          <div class="info-bar__item"><span class="info-bar__label">Tools</span><span class="info-bar__value">R-12 chart, energy balances</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Image slideshow -->
+    <div class="case-hero-img">
+      <div class="container">
+        <div class="case-slider" role="region" aria-roledescription="slideshow" aria-label="Project images">
+          <figure class="case-slide is-active" aria-hidden="false">
+            <img class="case-slide__bg" src="../assets/img/refrigeration-schematic.png" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/refrigeration-schematic.png" alt="Schematic of the vapour-compression refrigeration test rig" decoding="async">
+            <figcaption class="case-slide__caption">Vapour-compression refrigeration test rig</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/ref/ref-cycle.jpg" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/ref/ref-cycle.jpg" alt="Refrigeration cycle diagram: compressor, condenser, expansion valve and evaporator" decoding="async">
+            <figcaption class="case-slide__caption">The four stages of the refrigeration cycle</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/ref/ref-data.jpg" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/ref/ref-data.jpg" alt="Table of the five trials and the experimental heat, work and COP results" decoding="async">
+            <figcaption class="case-slide__caption">Trial data and experimental COP results</figcaption>
+          </figure>
+          <figure class="case-slide" aria-hidden="true">
+            <img class="case-slide__bg" src="../assets/img/ref/ref-deviation.jpg" alt="" decoding="async">
+            <img class="case-slide__img" src="../assets/img/ref/ref-deviation.jpg" alt="Table comparing graphical and experimental results with error percentages" decoding="async">
+            <figcaption class="case-slide__caption">Experimental vs graphical results — deviation</figcaption>
+          </figure>
+          <button class="case-slider__nav case-slider__prev" type="button" aria-label="Previous image">&#8249;</button>
+          <button class="case-slider__nav case-slider__next" type="button" aria-label="Next image">&#8250;</button>
+          <div class="case-slider__dots" role="group" aria-label="Choose image"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Key metrics -->
+    <section class="section section--alt" aria-label="Key metrics" style="padding-top:48px;">
+      <div class="container">
+        <div class="metrics">
+          <div class="metric reveal"><div class="metric__value" data-count="5">5</div><div class="metric__label">Experimental trials analysed</div></div>
+          <div class="metric reveal"><div class="metric__value" data-count="3.97" data-decimals="2">3.97</div><div class="metric__label">Average coefficient of performance (COP)</div></div>
+          <div class="metric reveal"><div class="metric__value" data-count="5.24" data-decimals="2" data-suffix=" %">5.24 %</div><div class="metric__label">Average deviation between methods</div></div>
+          <div class="metric reveal"><div class="metric__value" data-count="2">2</div><div class="metric__label">Efficiency improvements proposed</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5–6. Challenge + role -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="prose reveal">
+          <span class="eyebrow">The challenge</span>
+          <h2>How efficient is this refrigeration unit, really?</h2>
+          <p>A refrigeration unit moves heat from a cold space to a warmer one using four components: compressor, condenser, expansion valve and evaporator. Five lab trials recorded pressures, temperatures, flow rates and the electrical energy used.</p>
+          <p>The aim was to turn those readings into the unit's real performance — heat removed, heat rejected, work input and coefficient of performance (COP) — and to confirm the result with an independent graphical method.</p>
+        </div>
+        <div class="prose reveal">
+          <span class="eyebrow">My role</span>
+          <h2>What I did</h2>
+          <ul>
+            <li><strong>Analysed</strong> the vapour-compression cycle and the role of each of its four stages.</li>
+            <li><strong>Calculated</strong> heat rejected (Q<sub>H</sub>), heat absorbed (Q<sub>L</sub>), work input and COP for all five trials from the measured data.</li>
+            <li><strong>Plotted</strong> each trial on the R-12 pressure–enthalpy (P-h) chart to find enthalpies and recompute the same values graphically.</li>
+            <li><strong>Compared</strong> both methods trial by trial and calculated the error percentage for Q<sub>H</sub>, Q<sub>L</sub> and COP.</li>
+            <li><strong>Recommended</strong> design changes to raise the cycle's COP.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Process -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Method</span>
+          <h2>Two methods, one answer</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>Understand the cycle</h3>
+              <p>Low-pressure vapour is compressed, condensed to a high-pressure liquid, expanded through a valve, and evaporated again while absorbing heat from the cooled space.</p>
+            </div>
+            <figure class="step__media"><img class="fit-contain" src="../assets/img/ref/ref-cycle.jpg" alt="Refrigeration cycle diagram" loading="lazy" width="1100" height="1050"></figure>
+          </li>
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>Experimental method</h3>
+              <p>From the condenser water flow and temperature rise, the energy meter timing and the refrigerant data, I calculated Q<sub>H</sub>, Q<sub>L</sub>, work input and COP for each trial. Experimental COP ranged from 3.55 to 4.46.</p>
+            </div>
+            <figure class="step__media"><img class="fit-contain" src="../assets/img/ref/ref-data.jpg" alt="Trial data and experimental results table" loading="lazy" width="1100" height="1368"></figure>
+          </li>
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>Graphical method and comparison</h3>
+              <p>Each trial was plotted on the R-12 P-h chart to read enthalpies. The two methods agreed within an average of 5.24%, with differences explained by heat leakage and reading accuracy during the experiment.</p>
+            </div>
+            <figure class="step__media"><img class="fit-contain" src="../assets/img/ref/ref-deviation.jpg" alt="Comparison table of graphical and experimental results" loading="lazy" width="1100" height="283"></figure>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 8. Results & lessons -->
+    <section class="section">
+      <div class="container two-col">
+        <div class="callout reveal">
+          <h3>Results</h3>
+          <ul>
+            <li>Average COP of about 3.97 across both methods — an accepted value for a refrigeration cycle of this type.</li>
+            <li>Experimental and graphical results agreed within 5.24% on average.</li>
+            <li>Proposed improvements: add a flash chamber to separate liquid from vapour, and a heat exchanger between the condenser and expansion valve.</li>
+          </ul>
+        </div>
+        <div class="callout reveal">
+          <h3>Lessons learned</h3>
+          <ul>
+            <li>Checking a result with a second, independent method builds real confidence in it.</li>
+            <li>Small deviations come from the real world — heat leakage and instrument readings — not the theory.</li>
+            <li>COP is a direct way to judge, and improve, the energy efficiency of a system.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Prev / next -->
+    <section class="section section--tight">
+      <div class="container project-nav">
+        <a href="autonomous-golf-cart.html"><span>← Previous project</span><strong>Autonomous Golf Cart</strong></a>
+        <a class="project-nav__next" href="roll-bender.html"><span>Next project →</span><strong>Manual Double Roll Bending Machine</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Mustafa Adawi</p>
+          <p class="footer__tagline">Mechanical Engineer — Mechanical Design | Structural Analysis | Simulation</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul class="footer__links">
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../certificates.html">Certificates</a></li>
+            <li><a href="../about.html">About, Experience &amp; Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:engmustafaadawi@gmail.com">engmustafaadawi@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/mustafa-adawi-46a469348" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="../assets/docs/Mustafa-Adawi-Resume.pdf" download>Download Resume (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy"><img src="../assets/img/logo-ma.svg" alt="" width="28" height="28"><span>&copy; <span class="js-year">2026</span> Mustafa Adawi</span></span>
+        <span>Hidd, Bahrain</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-gear" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <circle class="scroll-gear__track" cx="32" cy="32" r="29"/>
+      <circle class="scroll-gear__ring" cx="32" cy="32" r="29"/>
+      <g class="scroll-gear__big" transform="translate(27 35)"><path/><circle r="3.2"/></g>
+      <g class="scroll-gear__small" transform="translate(41.6 22.4)"><path/><circle r="2.2"/></g>
+    </svg>
+  </button>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
